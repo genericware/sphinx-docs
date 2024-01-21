@@ -117,6 +117,10 @@ minikube delete
 1. Open a new terminal window
 2. Start port-forwarding
     ```shell
-    kubectl port-forward -n argocd services/argo-cd-argocd-server 8080:443
+    kubectl port-forward -n argocd services/argocd-server 8080:443
     ```
 3. Visit [https://localhost:8080/](https://localhost:8080/)
+4. Retrieve initial admin secret
+   ```shell
+   kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+   ```
