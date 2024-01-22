@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "docs"
+name = "sphinx-docs"
 version = "0.1.0"
-description = ""  # todo
+description = "generic-infrastructure documentation containing designs, guides, and notes."
 license = "MIT"
 authors = ["caerulescens <caerulescens.github@proton.me>"]
 maintainers = ["caerulescens <caerulescens.github@proton.me>"]
 readme = "README.md"
-packages = [{include = "docs", from = "src"}]
+packages = [{include = "sphinx-docs", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"

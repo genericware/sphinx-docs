@@ -1,6 +1,6 @@
 # sphinx-docs
 
-[//]: # (todo: description)
+generic-infrastructure documentation containing designs, guides, and notes.
 
 ## dependencies
 
@@ -26,7 +26,7 @@ poetry install --without dev
 ## build
 
 > [!IMPORTANT]  
-> `src/docs` is not currently used.
+> `src/sphinx-docs` is not currently used.
 
 package:
 ```shell

@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'docs'
+project = 'sphinx-docs'
 copyright = '2023, Andrew Linzie'
 author = 'Andrew Linzie'
 release = '0.1.0'
