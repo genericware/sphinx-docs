@@ -18,7 +18,7 @@
 | [IDEA-332935](https://youtrack.jetbrains.com/issue/IDEA-332935/Autocomplete-fails-for-locals-reference-in-HCL)                  | `open`     | Autocomplete fails for `locals` referenced in `*.hcl` files                                 |
 :::
 
-:::{table} Tracking GitHub issues.
+:::{table} Tracking GitHub issues
 :widths: auto
 
 | repository                                           | issue                                                                                   | state  | description                                                                                         |
@@ -32,9 +32,19 @@
 :::{table} generic-infrastructure
 :widths: auto
 
-| name | description |
-|------|-------------|
-|      |             |
+| name                                                                                               | description                                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [cookiecutter-terragrunt](https://github.com/generic-infrastructure/cookiecutter-terragrunt)       | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`terragrunt`](https://github.com/gruntwork-io/terragrunt) projects.             |
+| [cookiecutter-fastapi](https://github.com/generic-infrastructure/cookiecutter-fastapi)             | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`fastapi`](https://github.com/tiangolo/fastapi) projects.                       |
+| [cookiecutter-poetry](https://github.com/generic-infrastructure/cookiecutter-poetry)               | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`poetry`](https://github.com/python-poetry/poetry) projects.                    |
+| [cookiecutter-terraform](https://github.com/generic-infrastructure/cookiecutter-terraform)         | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`terraform`](https://github.com/hashicorp/terraform) projects.                  |
+| [helm-app-of-apps](https://github.com/generic-infrastructure/helm-app-of-apps)                     | Application that launches other applications.                                                                                                                |
+| [helm-tenant](https://github.com/generic-infrastructure/helm-tenant)                               | Application that launches tenant specific resources.                                                                                                         |
+| [next-frontend](https://github.com/generic-infrastructure/next-frontend)                           | Front-end based on [`Next.js`](https://github.com/vercel/next.js/).                                                                                          |
+| [sphinx-docs](https://github.com/generic-infrastructure/sphinx-docs)                               | [`sphinx`](https://github.com/sphinx-doc/sphinx) documentation containing designs, guides, research, and notes.                                              |
+| [terraform-gke-cluster](https://github.com/generic-infrastructure/terraform-gke-cluster)           | [`terraform`](https://github.com/hashicorp/terraform) project for launching [`gke`](https://cloud.google.com/kubernetes-engine/) clusters.                   |
+| [terraform-minikube-cluster](https://github.com/generic-infrastructure/terraform-minikube-cluster) | [`terraform`](https://github.com/hashicorp/terraform) project for launching [`minikube`](https://github.com/kubernetes/minikube) clusters.                   |
+| [terragrunt-devops](https://github.com/generic-infrastructure/terragrunt-devops)                   | [`kubernetes`](https://github.com/kubernetes/kubernetes) cluster development operations based on [`terragrunt`](https://github.com/gruntwork-io/terragrunt). |
 
 :::
 
@@ -79,12 +89,12 @@
 :::{table} Helm Charts
 :widths: auto
 
-[//]: # (todo: keycloak)
-[//]: # (todo: oauth2-proxy)
 | name                                                                                                                                     | description                     |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | [argoproj/argo-helm](https://github.com/argoproj/argo-helm)                                                                              | Continuous delivery             |
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager)                                                                | Issuer & certificate automation |
+| [keycloak](https://github.com/codecentric/helm-charts/tree/master/charts/keycloakx)                                                      | Identity & access management    |
+| [oauth2-proxy](https://github.com/oauth2-proxy/manifests/tree/main/helm/oauth2-proxy)                                                    | OAuth reverse proxy             | 
 | [istio/istio-base](https://github.com/istio/istio/tree/master/manifests/charts/base)                                                     | Network base definitions        |
 | [istio/istio-ingress](https://github.com/istio/istio/tree/master/manifests/charts/gateways/istio-ingress)                                | Network ingress gateway         |
 | [istio/istiod](https://github.com/istio/istio/tree/master/manifests/charts/istio-control/istio-discovery)                                | Network daemon                  |

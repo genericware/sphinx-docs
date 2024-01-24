@@ -1,8 +1,14 @@
 # Design
 
-## Cluster Initialization
+## Kubernetes Cluster
 
-[//]: # (todo: terragrunt, terraform cycle prior to `app-of-apps`)
+## Requirements
+
+[//]: # (helm; v3.x or later)
+[//]: # (tekton; k8s v1.23 or later)
+[//]: # (rook; k8s v1.22 or later)
+
+### Initialization
 
 The cluster is initialized using [waves](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-waves/). 
 ArgoCD waits for healthy resources at each wave before continuing.
@@ -39,5 +45,3 @@ ArgoCD waits for healthy resources at each wave before continuing.
 | mysql operator                  | chart                                     | `mysql-operator`               | -20  |
 | mongodb operator                | chart                                     | `mongodb-kubernetes-operator`  | -10  |
 | tenants                         | chart                                     | `tenant`                       | 0    |
-
-[//]: # (todo: tenant chart)

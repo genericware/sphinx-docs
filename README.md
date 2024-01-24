@@ -1,6 +1,6 @@
 # sphinx-docs
 
-generic-infrastructure documentation containing designs, guides, and notes.
+Documentation containing designs, guides, and notes.
 
 ## dependencies
 
