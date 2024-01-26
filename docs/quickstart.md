@@ -2,28 +2,37 @@
 
 A quickstart guide for containerized development.
 
+## Introduction
+
 ## Installation
 
-:::{table} Install Command-line Tools & Libraries
+:::{table} Install Toolchains, Command-line Tools, and Libraries
 :widths: auto
 
-| name           | description |
-|----------------|-------------|
-| [kvm]()        |             |
-| [qemu]()       |             |
-| [gcloud]()     |             |
-| [terragrunt]() |             |
-| [terraform]()  |             |
-| [kubectl]()    |             |
-| [minikube]()   |             |
-| [helm]()       |             | 
-| [docker]()     |             |
-| [istioctl]()   |             |
-| [argocd]()     |             |
-| [kn]()         |             |
-| [func]()       |             |
-| [kcat]()       |             |
-| [nvm]()        |             |
+| Name                                                                                         | Audience (GNU/Linux, macOS, All) | Description                                       |
+|----------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------|
+|                                                                                              |                                  |                                                   |
+| [kvm](https://wiki.debian.org/KVM)                                                           | GNU/Linux                        | Kernel-based Virtual Machine (KVM)                |
+| [qemu](https://www.qemu.org/)                                                                | All                              | Quick Emulator (QEMU)                             |
+| [gcloud](https://cloud.google.com/sdk/gcloud/)                                               | All                              | Google Cloud Project (GCP) Command-line Interface |
+| [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/)                  | All                              | Wrapper for scripting `terraform`                 |
+| [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) | All                              | Infrastructure as Code (IaC)                      |
+| [kubeadm](https://kubernetes.io/docs/tasks/tools/#kubeadm)                                   | GNU/Linux                        | Kubernetes Administration Toolbox                 |
+| [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)                                   | macOS                            |                                                   |
+| [rustc]()                                                                                    |                                  |                                                   |
+| [go]()                                                                                       |                                  |                                                   |
+| [typescript]()                                                                               |                                  |                                                   |
+| [pyenv]()                                                                                    |                                  |                                                   |
+| [poetry]()                                                                                   |                                  |                                                   |
+| [minikube](https://kubernetes.io/docs/tasks/tools/#minikube)                                 | All                              |                                                   |
+| [helm]()                                                                                     | All                              |                                                   | 
+| [docker]()                                                                                   | All                              |                                                   |
+| [istioctl]()                                                                                 | All                              |                                                   |
+| [argocd]()                                                                                   | All                              |                                                   |
+| [kn]()                                                                                       | All                              |                                                   |
+| [func]()                                                                                     | All                              |                                                   |
+| [kcat]()                                                                                     | All                              |                                                   |
+| [nvm]()                                                                                      | All                              |                                                   |
 :::
 
 :::{table} Install Development Software

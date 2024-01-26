@@ -2,29 +2,29 @@
 
 ## Maintainers
 
-| name            | username                                        | contact                           | role |
-|-----------------|-------------------------------------------------|-----------------------------------|------|
-| Andrew Linzie   | [caerulescens](https://github.com/caerulescens) | `caerulescens.github@proton.me`   | BDFL |
+| Name          | Username                                        | Contact                         | Role |
+|---------------|-------------------------------------------------|---------------------------------|------|
+| Andrew Linzie | [caerulescens](https://github.com/caerulescens) | `caerulescens.github@proton.me` | BDFL |
 
 ## Issue Tracking
 
 :::{table} YouTrack JetBrains IDE issues
 :widths: auto
 
-| id                                                                                                                              | state      | description                                                                                 |
-|---------------------------------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------|
-| [PY-61291](https://youtrack.jetbrains.com/issue/PY-61291/Support-MyST-syntax)                                                   | `preview`  | PyCharm support for [MyST](https://myst-parser.readthedocs.io/en/latest/index.html#) syntax | 
-| [IDEA-313978](https://youtrack.jetbrains.com/issue/IDEA-313978/Terraform-and-HCL-plugin-does-not-support-formatting-.hcl-files) | `open`     | Terraform and HCL plugin support for `*.hcl` files                                          | 
-| [IDEA-332935](https://youtrack.jetbrains.com/issue/IDEA-332935/Autocomplete-fails-for-locals-reference-in-HCL)                  | `open`     | Autocomplete fails for `locals` referenced in `*.hcl` files                                 |
+| Id                                                                                                                              | State     | Description                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------|
+| [PY-61291](https://youtrack.jetbrains.com/issue/PY-61291/Support-MyST-syntax)                                                   | `preview` | PyCharm support for [MyST](https://myst-parser.readthedocs.io/en/latest/index.html#) syntax | 
+| [IDEA-313978](https://youtrack.jetbrains.com/issue/IDEA-313978/Terraform-and-HCL-plugin-does-not-support-formatting-.hcl-files) | `open`    | Terraform and HCL plugin support for `*.hcl` files                                          | 
+| [IDEA-332935](https://youtrack.jetbrains.com/issue/IDEA-332935/Autocomplete-fails-for-locals-reference-in-HCL)                  | `open`    | Autocomplete fails for `locals` referenced in `*.hcl` files                                 |
 :::
 
 :::{table} Tracking GitHub issues
 :widths: auto
 
-| repository                                           | issue                                                                                   | state  | description                                                                                         |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------|
-| `tiangolo/sqlmodel`                                  | [#654](https://github.com/tiangolo/sqlmodel/issues/654)                                 | `open` | Roadmap for official `fastapi`+`sqlalchemy`+`pydantic`+`alembic`+`typer` support, async tools, docs |
-| `scott-the-programmer/terraform-provider-minikube`   | [#120](https://github.com/scott-the-programmer/terraform-provider-minikube/issues/120)  | `open` | Support for launching `minikube` using [`opentofu`](https://opentofu.org/)                          |
+| Repository                                         | Issue                                                                                  | State  | Description                                                                                         |
+|----------------------------------------------------|----------------------------------------------------------------------------------------|--------|-----------------------------------------------------------------------------------------------------|
+| `tiangolo/sqlmodel`                                | [#654](https://github.com/tiangolo/sqlmodel/issues/654)                                | `open` | Roadmap for official `fastapi`+`sqlalchemy`+`pydantic`+`alembic`+`typer` support, async tools, docs |
+| `scott-the-programmer/terraform-provider-minikube` | [#120](https://github.com/scott-the-programmer/terraform-provider-minikube/issues/120) | `open` | Support for launching `minikube` using [`opentofu`](https://opentofu.org/)                          |
 :::
 
 ## Source Code
@@ -32,7 +32,7 @@
 :::{table} generic-infrastructure
 :widths: auto
 
-| name                                                                                               | description                                                                                                                                                  |
+| Name                                                                                               | Description                                                                                                                                                  |
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [cookiecutter-terragrunt](https://github.com/generic-infrastructure/cookiecutter-terragrunt)       | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`terragrunt`](https://github.com/gruntwork-io/terragrunt) projects.             |
 | [cookiecutter-fastapi](https://github.com/generic-infrastructure/cookiecutter-fastapi)             | [`cookiecutter`](https://github.com/cookiecutter/cookiecutter) template for [`fastapi`](https://github.com/tiangolo/fastapi) projects.                       |
@@ -51,7 +51,7 @@
 :::{table} GitHub Actions
 :widths: auto
 
-| name                                                                                | description                         |
+| Name                                                                                | Description                         |
 |-------------------------------------------------------------------------------------|-------------------------------------|
 | [medyagh/setup-minikube](https://github.com/medyagh/setup-minikube)                 | Installing and running `minikube`   |
 | [gruntwork-io/terragrunt-action](https://github.com/gruntwork-io/terragrunt-action) | Installing and running `terragrunt` |
@@ -65,7 +65,7 @@
 :::{table} Pre-commit hooks
 :widths: auto
 
-| name                                                                                               | description                                              |
+| Name                                                                                               | Description                                              |
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | [gruntwork-io/pre-commit](https://github.com/gruntwork-io/pre-commit)                              | `terragrunt`, `terraform`, `helm`, `go`, and shell hooks | 
 | [terraform-docs/terraform-docs](https://github.com/terraform-docs/terraform-docs/#pre-commit-hook) | `terraform` doc hooks                                    | 
@@ -80,7 +80,7 @@
 :::{table} Terraform Providers
 :widths: auto
 
-| name                                                                                                                    | description                    |
+| Name                                                                                                                    | Description                    |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | [scott-the-programmer/terraform-provider-minikube](https://github.com/scott-the-programmer/terraform-provider-minikube) | `minikube` cluster             |
 | [hashicorp/terraform-provider-google](https://github.com/hashicorp/terraform-provider-google)                           | Google Cloud Project resources |
@@ -89,7 +89,7 @@
 :::{table} Helm Charts
 :widths: auto
 
-| name                                                                                                                                     | description                     |
+| Name                                                                                                                                     | Description                     |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | [argoproj/argo-helm](https://github.com/argoproj/argo-helm)                                                                              | Continuous delivery             |
 | [cert-manager/cert-manager](https://github.com/cert-manager/cert-manager)                                                                | Issuer & certificate automation |
@@ -113,7 +113,7 @@
 :widths: auto
 
 [//]: # (todo: tekton)
-| name                                                                                        | description                        |
+| Name                                                                                        | Description                        |
 |---------------------------------------------------------------------------------------------|------------------------------------|
 | [knative/operator](https://github.com/knative/operator)                                     | Cloud microservice framework       |
 | [knative/serving](https://github.com/knative/serving)                                       | Microservice server hosting        |
@@ -132,7 +132,7 @@
 [//]: # (todo: hypercorn + trio)
 [//]: # (todo: kafka client driver)
 [//]: # (todo: s3 client driver)
-| name                                                                                                                          | description                                    |
+| Name                                                                                                                          | Description                                    |
 |-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | [encode/uvicorn](https://github.com/encode/uvicorn)                                                                           | ASGI web server                                |
 | [MagicStack/uvloop](https://github.com/MagicStack/uvloop)                                                                     | Cython event loop                              |

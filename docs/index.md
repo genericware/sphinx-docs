@@ -4,10 +4,10 @@
 :hidden:
 
 quickstart.md
+demo.md
 project.md
 design.md
 references.md
-faq.md
 :::
 
 :::{toctree}
@@ -15,4 +15,5 @@ faq.md
 :caption: Guides
 
 guides/minikube.md
+guides/gke.md
 :::
