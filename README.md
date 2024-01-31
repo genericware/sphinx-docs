@@ -26,7 +26,7 @@ poetry install --without dev
 ## build
 
 > [!IMPORTANT]  
-> `src/sphinx-docs` is not currently used.
+> `src/sphinx_docs` is not currently used.
 
 package:
 ```shell
