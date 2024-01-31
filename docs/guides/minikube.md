@@ -55,11 +55,11 @@ minikube delete
     ```
 3. add A records
     ```text
-    <external-ip> argocd.development.local.generic-infrastructure.com
-    <external-ip> grafana.development.local.generic-infrastructure.com
-    <external-ip> kiali.development.local.generic-infrastructure.com
-    <external-ip> minio.development.local.generic-infrastructure.com
-    <external-ip> api.development.local.generic-infrastructure.com
+    <external-ip> argocd.development.local.generic-infrastructure.test
+    <external-ip> grafana.development.local.generic-infrastructure.test
+    <external-ip> kiali.development.local.generic-infrastructure.test
+    <external-ip> minio.development.local.generic-infrastructure.test
+    <external-ip> api.development.local.generic-infrastructure.test
     ```
 
 ### Enable Ingress
@@ -90,12 +90,12 @@ minikube delete
 
 ## Services
 
-| name                                                                    | login                                                          | description                              |
-|-------------------------------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
-| [argocd](https://argocd.development.local.generic-infrastructure.com)   | `admin` / `test`                                               | login for continuous delivery service    |
-| [grafana](https://grafana.development.local.generic-infrastructure.com) | `admin` / `prom-operator`                                      | login for observability service          |
-| [kiali](https://kiali.development.local.generic-infrastructure.com)     | `kubectl -n istio-system create token kiali-service-account`   | login for network administration service |
-| [minio](https://minio.development.local.generic-infrastructure.com)     | `admin` / `testtesttest`                                       | login for object store                   |
+| name                                                                     | login                                                          | description                              |
+|--------------------------------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
+| [argocd](https://argocd.development.local.generic-infrastructure.test)   | `admin` / `test`                                               | login for continuous delivery service    |
+| [grafana](https://grafana.development.local.generic-infrastructure.test) | `admin` / `prom-operator`                                      | login for observability service          |
+| [kiali](https://kiali.development.local.generic-infrastructure.test)     | `kubectl -n istio-system create token kiali-service-account`   | login for network administration service |
+| [minio](https://minio.development.local.generic-infrastructure.test)     | `admin` / `testtesttest`                                       | login for object store                   |
 
 ## Troubleshooting
 
