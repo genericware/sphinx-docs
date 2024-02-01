@@ -9,30 +9,30 @@ A quickstart guide for containerized development.
 :::{table} Install Toolchains, Command-line Tools, and Libraries
 :widths: auto
 
-| Name                                                                                         | Audience (GNU/Linux, macOS, All) | Description                                       |
-|----------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------|
-|                                                                                              |                                  |                                                   |
-| [kvm](https://wiki.debian.org/KVM)                                                           | GNU/Linux                        | Kernel-based Virtual Machine (KVM)                |
-| [qemu](https://www.qemu.org/)                                                                | All                              | Quick Emulator (QEMU)                             |
-| [gcloud](https://cloud.google.com/sdk/gcloud/)                                               | All                              | Google Cloud Project (GCP) Command-line Interface |
-| [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/)                  | All                              | Wrapper for scripting `terraform`                 |
-| [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) | All                              | Infrastructure as Code (IaC)                      |
-| [kubeadm](https://kubernetes.io/docs/tasks/tools/#kubeadm)                                   | GNU/Linux                        | Kubernetes Administration Toolbox                 |
-| [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)                                   | macOS                            |                                                   |
-| [rustc]()                                                                                    |                                  |                                                   |
-| [go]()                                                                                       |                                  |                                                   |
-| [typescript]()                                                                               |                                  |                                                   |
-| [pyenv]()                                                                                    |                                  |                                                   |
-| [poetry]()                                                                                   |                                  |                                                   |
-| [minikube](https://kubernetes.io/docs/tasks/tools/#minikube)                                 | All                              |                                                   |
-| [helm]()                                                                                     | All                              |                                                   | 
-| [docker]()                                                                                   | All                              |                                                   |
-| [istioctl]()                                                                                 | All                              |                                                   |
-| [argocd]()                                                                                   | All                              |                                                   |
-| [kn]()                                                                                       | All                              |                                                   |
-| [func]()                                                                                     | All                              |                                                   |
-| [kcat]()                                                                                     | All                              |                                                   |
-| [nvm]()                                                                                      | All                              |                                                   |
+| Name                                                                                         | Audience (GNU/Linux, macOS, All) | Description                                                                    |
+|----------------------------------------------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------|
+|                                                                                              |                                  |                                                                                |
+| [kvm](https://wiki.debian.org/KVM)                                                           | GNU/Linux                        | Kernel-based Virtual Machine (KVM)                                             |
+| [qemu](https://www.qemu.org/)                                                                | All                              | Quick Emulator (QEMU)                                                          |
+| [socket_vmnet](https://formulae.brew.sh/formula/socket_vmnet)                                | macOS                            | Socket interface to [`vmnet`](https://developer.apple.com/documentation/vmnet) |
+| [gcloud](https://cloud.google.com/sdk/gcloud/)                                               | All                              | Google Cloud Project (GCP) Command-line Interface                              |
+| [terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/)                  | All                              | Wrapper for scripting `terraform`                                              |
+| [terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) | All                              | Infrastructure as Code (IaC)                                                   |
+| [kubeadm](https://kubernetes.io/docs/tasks/tools/#kubeadm)                                   | GNU/Linux                        | Kubernetes Administration Toolbox                                              |
+| [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)                                   | All                              |                                                                                |
+| [go]()                                                                                       | All                              |                                                                                |
+| [typescript]()                                                                               | All                              |                                                                                |
+| [pyenv]()                                                                                    | All                              |                                                                                |
+| [poetry]()                                                                                   | All                              |                                                                                |
+| [minikube](https://kubernetes.io/docs/tasks/tools/#minikube)                                 | All                              |                                                                                |
+| [helm]()                                                                                     | All                              |                                                                                | 
+| [docker]()                                                                                   | All                              |                                                                                |
+| [istioctl]()                                                                                 | All                              |                                                                                |
+| [argocd]()                                                                                   | All                              |                                                                                |
+| [kn]()                                                                                       | All                              |                                                                                |
+| [func]()                                                                                     | All                              |                                                                                |
+| [kcat]()                                                                                     | All                              |                                                                                |
+| [nvm]()                                                                                      | All                              |                                                                                |
 :::
 
 :::{table} Install Development Software
@@ -67,128 +67,56 @@ A quickstart guide for containerized development.
 | [TeXiFy IDEA](https://plugins.jetbrains.com/plugin/9473-texify-idea)                                        |             |
 :::
 
-### add custom resource definitions
+### Kubernetes CRDs
 
-[//]: # (todo)
+[//]: # (todo: improve recommendation descriptions)
 
-| link         | description |
-|--------------|-------------|
-| istio        |             |
-| cert-manager |             |
-| argocd       |             |
-|              |             |
-|              |             |
+### Recommendations
 
-### add run/debug configurations
+Jetbrains:
+* Add run and debug configurations
+* Setup SonarLint connection
+* Open all repositories in one IDE window
+* Use same branch name for all repositories
+* Enable changing zoom within source files using the ctrl + mousewheel
+* Use same keymap across all operating systems
+* Compile python with profile guided optimizations and link time optimizations
+* Maintain latest patch for each stable minor version of python
+* Generate virtual environments using pycharm
+* Check virtual environments and package dependencies
+* View package readmes using pycharm
+* Rename and group terminal tabs for repositories
+* Split windows while working between multiple files
+* Collapse all to reset project view
+* Expand all to review commit status
+* Use "todo" and "fixme" for highlighted development notes
+* Inspect code using problems view
+* Type check code using the mypy view
+* Model with pydantic for completions and linting
+* Check all working branches at same time
+* One commit message for multiple repositories
+* Run pre-commit checks for multiple repositories
 
-[//]: # (todo)
+### Cheatsheet
 
-### setup sonarlint connection
+[//]: # (todo: document essential commands)
 
-[//]: # (todo)
+terragrunt:
+```shell
+```
 
-### recommendations
+terraform:
+```shell
+```
 
-#### open all repositories in one ide window
+kustomize:
+```shell
+```
 
-[//]: # (todo)
+helm:
+```shell
+```
 
-#### use same branch name for all repositories
-
-[//]: # (todo)
-
-#### enable changing zoom within source files using the ctrl + mousewheel
-
-[//]: # (todo)
-
-#### use same keymap across all operating systems
-
-[//]: # (todo)
-
-#### compile python with profile guided optimizations and link time optimizations
-
-[//]: # (todo)
-
-#### maintain latest patch for each stable minor version of python
-
-[//]: # (todo)
-
-#### generate virtual environments using pycharm
-
-[//]: # (todo)
-
-#### check virtual environments and package dependencies
-
-[//]: # (todo)
-
-#### view package readmes using pycharm
-
-[//]: # (todo)
-
-#### rename and group terminal tabs for repositories
-
-[//]: # (todo)
-
-#### split windows while working between multiple files
-
-[//]: # (todo)
-
-#### collapse all to reset project view
-
-[//]: # (todo)
-
-#### expand all to review commit status
-
-[//]: # (todo)
-
-#### use "todo" and "fixme" for highlighted development notes
-
-[//]: # (todo)
-
-#### inspect code using problems view
-
-[//]: # (todo)
-
-#### type check code using the mypy view
-
-[//]: # (todo)
-
-#### model with pydantic for completions and linting
-
-[//]: # (todo)
-
-#### check all working branches at same time
-
-[//]: # (todo)
-
-#### one commit message for multiple repositories
-
-[//]: # (todo)
-
-#### run pre-commit checks for multiple repositories
-
-[//]: # (todo)
-
-### cheatsheet
-
-[//]: # (todo)
-
-#### terragrunt
-
-[//]: # (todo)
-
-#### terraform
-
-[//]: # (todo)
-
-#### kustomize
-
-[//]: # (todo)
-
-#### helm
-
-[//]: # (todo)
-
-#### minikube
-
-[//]: # (todo)
+minikube:
+```shell
+```

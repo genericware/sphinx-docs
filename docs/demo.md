@@ -1,3 +1,4 @@
+[//]: # (todo: demo docs first draft)
 # Demo
 
 A list of feature demos.
@@ -29,8 +30,6 @@ cookiecutter .
 | `gke`      | Generate with `gke` support      |
 
 ### Name Cluster(s)
-
-[//]: # (todo)
 
 ### `tox` Support
 
@@ -173,11 +172,7 @@ cookiecutter .
 
 ### Backend
 
-[//]: # (todo)
-
 ### Provider(s)
-
-[//]: # (todo)
 
 ### `tox` Support
 
@@ -212,13 +207,9 @@ cookiecutter .
 
 ## `sphinx-docs`
 
-[//]: # (todo)
-
 ---
 
 ## `terraform-gke-cluster`
-
-[//]: # (todo)
 
 ---
 

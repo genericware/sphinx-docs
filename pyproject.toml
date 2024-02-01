@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sphinx-docs"
 version = "0.1.0"
-description = "generic-infrastructure documentation containing designs, guides, and notes."
+description = "Documentation containing designs, guides, and notes."
 license = "MIT"
 authors = ["caerulescens <caerulescens.github@proton.me>"]
 maintainers = ["caerulescens <caerulescens.github@proton.me>"]

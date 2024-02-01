@@ -42,8 +42,8 @@ minikube delete
 
 ### Enable DNS
 
-[//]: # (todo: attempt removing step; see static-ip, dnsmasq, metallb)
-[//]: # (todo: see: https://minikube.sigs.k8s.io/docs/tutorials/static_ip/)
+[//]: # (todo: document steps)
+[//]: # (see: https://github.com/QCDIS/NaaVRE-dev-environment/issues/1)
 
 1. retrieve `external-ip`
     ```shell
@@ -64,9 +64,9 @@ minikube delete
 
 ### Enable Ingress
 
-[//]: # (todo: remove need for sudo by setting exact sudoers permissions one-time)
-[//]: # (todo: see: https://superuser.com/questions/1328452/sudoers-nopasswd-for-single-executable-but-allowing-others)
-[//]: # (todo: see: https://serverfault.com/questions/1110340/executing-a-command-without-password-prompt-or-root)
+[//]: # (todo: document setting how to set sudoers permissions one-time)
+[//]: # (see: https://superuser.com/questions/1328452/sudoers-nopasswd-for-single-executable-but-allowing-others)
+[//]: # (see: https://serverfault.com/questions/1110340/executing-a-command-without-password-prompt-or-root)
 
 1. open new terminal window
 2. provide load balancing services
@@ -76,8 +76,7 @@ minikube delete
 
 ### Enable HTTPS
 
-[//]: # (todo: update organization certificate; validate tls setup and certificate chain)
-[//]: # (todo: add steps for chrome and safari)
+[//]: # (todo: add certificate steps for chrome and safari)
 
 1. export ca cert
     ```shell
@@ -85,8 +84,9 @@ minikube delete
     ```
 2. add cert to browser
    * firefox: settings > privacy & security > view certificates > authorities > import > (select `ca.pem`) > trust to identify websites
-   
-[//]: # (todo: enable gpu; kvm2 driver only; see: https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)
+
+[//]: # (todo: document kvm2 gpu usage)
+[//]: # (see: https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)
 
 ## Services
 

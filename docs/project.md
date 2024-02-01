@@ -128,10 +128,10 @@
 :::{table} Python
 :widths: auto
 
-[//]: # (todo: add cloudevents)
+[//]: # (todo: cloudevents)
 [//]: # (todo: hypercorn + trio)
-[//]: # (todo: kafka client driver)
-[//]: # (todo: s3 client driver)
+[//]: # (todo: kafka driver)
+[//]: # (todo: s3 driver)
 | Name                                                                                                                          | Description                                    |
 |-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | [encode/uvicorn](https://github.com/encode/uvicorn)                                                                           | ASGI web server                                |
