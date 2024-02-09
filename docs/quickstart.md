@@ -99,24 +99,59 @@ Jetbrains:
 
 ### Cheatsheet
 
-[//]: # (todo: document essential commands)
-
 terragrunt:
 ```shell
+# install
+cd path/to/project
+terragrunt init
+terragrunt plan
+terragrunt apply
+
+# destroy
+terragrunt destroy
 ```
 
 terraform:
 ```shell
-```
-
-kustomize:
-```shell
-```
-
-helm:
-```shell
+# install
+cd path/to/project
+terraform init
+terraform plan
+terraform apply
 ```
 
 minikube:
 ```shell
+# install driver
+minikube start --driver=<name>
+minikube delete
+
+# reset minikube config
+rm -rf ~/.minikube
+minikube start
+minikube delete
+```
+
+kubectl
+```shell
+# get all
+kubectl get all --all-namespaces
+
+# get istio external ip
+kubectl get service -n istio-ingress istio-ingress -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
+```
+
+kustomize:
+```shell
+# install
+kustomize build --enable-helm path/to/kustomization | kubectl apply -f -
+```
+
+helm:
+```shell
+# install
+
+# test
+
+# docs
 ```

@@ -6,6 +6,7 @@ This guide covers local cluster initialization using `minikube`.
 
 install:
 ```shell
+cd path/to/project
 terragrunt init
 terragrunt plan
 terragrunt apply
@@ -18,7 +19,7 @@ terragrunt destroy
 
 uninstall(force):
 ```shell
-minikube delete
+minikube delete -p <name>
 ```
 
 ## Run `minikube` with `terraform`
@@ -42,25 +43,36 @@ minikube delete
 
 ### Enable DNS
 
-[//]: # (todo: document steps)
-[//]: # (see: https://github.com/QCDIS/NaaVRE-dev-environment/issues/1)
 
-1. retrieve `external-ip`
-    ```shell
-    kubectl get -n istio-ingress services
-    ```
-2. edit `/etc/hosts`
-    ```shell
-    sudo nano /etc/hosts
-    ```
-3. add A records
-    ```text
-    <external-ip> argocd.development.local.generic-infrastructure.test
-    <external-ip> grafana.development.local.generic-infrastructure.test
-    <external-ip> kiali.development.local.generic-infrastructure.test
-    <external-ip> minio.development.local.generic-infrastructure.test
-    <external-ip> api.development.local.generic-infrastructure.test
-    ```
+
+#### GNU/Linux
+
+##### Using `systemd-resolved`
+
+1. Install `systemd-resolved`
+   ```shell
+   sudo apt-get -y install systemd-resolved
+   ```
+2. Make directory
+   ```shell
+   sudo mkdir /etc/systemd/resolved.conf.d
+   ```
+3. Make DNS Record
+   ```shell
+   sudo tee /etc/systemd/resolved.conf.d/minikube.conf << EOF
+   [Resolve]
+   DNS=$(kubectl get service -n istio-ingress istio-ingress -o jsonpath="{.status.loadBalancer.ingress[0].ip}")
+   Domains=~test
+   EOF
+   ```
+4. Restart resolved
+   ```shell
+   sudo systemctl restart systemd-resolved
+   ```
+
+##### Using ``
+
+#### macOS
 
 ### Enable Ingress
 
@@ -82,8 +94,9 @@ minikube delete
     ```shell
     kubectl get -n cert-manager secret istio-ca -ogo-template='{{index .data "tls.crt"}}' | base64 -d > ca.pem
     ```
-2. add cert to browser
-   * firefox: settings > privacy & security > view certificates > authorities > import > (select `ca.pem`) > trust to identify websites
+2. Add Root CA Certificate to browser
+   * Firefox: settings > privacy & security > view certificates > authorities > import > (select `ca.pem`) > trust to identify websites
+
 
 [//]: # (todo: document kvm2 gpu usage)
 [//]: # (see: https://minikube.sigs.k8s.io/docs/tutorials/nvidia/)
@@ -113,7 +126,7 @@ minikube delete
     minikube delete
     ```
 
-### fix dns issue reaching argocd
+### Fallback when there's DNS issues reaching ArgoCD
 1. Open a new terminal window
 2. Start port-forwarding
     ```shell
