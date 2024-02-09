@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'docs'
+project = 'sphinx-docs'
 copyright = '2023, Andrew Linzie'
 author = 'Andrew Linzie'
 release = '0.1.0'
@@ -16,10 +16,10 @@ release = '0.1.0'
 
 extensions = ["sphinx_rtd_theme", "myst_parser"]
 
+myst_enable_extensions = ['colon_fence']
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
